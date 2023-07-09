@@ -1,0 +1,142 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS variables*/
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation bar:logo and Image*/
+#logo{
+    margin: 34px 45px;
+}
+
+#logo img{
+    height:62px;
+    margin: -25px -8px;
+}
+/* navigation bar : list styling*/
+#navbar ul{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.78;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+/*Home Section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background : url('../img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*services section*/
+#services{
+    margin: 34px;
+    display:flex;
+    
+}
+
+#services .box{
+    border: 2px solid brown;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services
+#services
+#services
+/*Utility class*/
+.h-primary{
+    font-size: 3cqw;
+    padding: 12px ;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: orange;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
