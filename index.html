@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery Services|OnlineMeals.com</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1300px)" href="css/phone.css">
     <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,10 +15,11 @@
         </div>
 
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">services</a></li>
-            <li class="item"><a href="#">About</a></li>
-            <li class="item"><a href="#">Contact</a></li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">services</a></li>
+            <li class="item"><a href="#about">About</a></li>
+            <li class="item"><a href="#food-menu">Menu</a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
             
         </ul>
     </nav>
@@ -27,8 +29,8 @@
         <p>Free Shipping on orders above Rs500 </p>
         <button class="btn">Order Now</button>
     </section>
-   
-    <section class="services-container">
+ 
+    <section id="services-container">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
             <div class="box">
@@ -48,17 +50,16 @@
             </div>
     </section>
     
-    <!--<section id="about">
+    <section id="about">
         <div class="about-wrapper container">
             <div class="about-text">
                 <p class="small">About Us</p>
                 <h2>We've beem making healthy food last for 10 years</h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
-                    eos omnis, nobis dignissimos perferendis et officia architecto,
-                    fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
-                    maiores praesentium soluta alias asperiores saepe commodi
-                    consequatur? Perferendis est placeat facere aspernatur!
+                    We take pride in creating unforgettable dining experiences for our valued guests. With a passion for exceptional food and a commitment to exceptional service, our team of skilled chefs, sommeliers, and staff work tirelessly to ensure every visit is a delightful journey for your senses. From sourcing the finest ingredients to crafting innovative dishes that showcase flavors from around the world, we strive to exceed your expectations with every bite. Whether you're celebrating a special occasion or simply indulging in a memorable meal, join us at [Restaurant Name] and let us create an unforgettable dining experience that will leave you craving for more.
+                </p>
+                <p>
+                    We are passionate about delivering exceptional dining experiences to our valued guests. With a commitment to culinary excellence and warm hospitality, our dedicated team of chefs, sommeliers, and staff work tirelessly to create a memorable and inviting atmosphere. From carefully sourcing the finest ingredients to crafting innovative dishes that showcase a fusion of flavors, we strive to exceed expectations and make each visit truly extraordinary. Join us and embark on a culinary journey that celebrates exquisite cuisine, impeccable service, and an ambiance that delights all your senses.
                 </p>
             </div>
             <div class="about-img">
@@ -66,88 +67,96 @@
             </div>
         </div>
     </section>
-    <!--<section>
-        <div class="w3-row w3-padding-64" id="about">
-            <div class="w3-col m6 w3-padding-large w3-hide-small">
-            <img src="img\about.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    <section id="food-menu">
+        <h2 class="food-menu-heading">Food Menu</h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Avacado Salad</h2>
+                    <p>
+                        Our avocado salad combines creamy avocado slices with a refreshing blend of crisp greens, tangy citrus, and a sprinkle of savory toppings, creating a delightful balance of flavors and textures.  
+                        
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
             </div>
-        
-            <div class="w3-col m6 w3-padding-large">
-            <h1 class="w3-center">About Catering</h1><br>
-            <h5 class="w3-center">Tradition since 1889</h5>
-            <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
-            <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/sgzXPzzd/food-menu2.jpg" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Healthy Oats</h2>
+                    <p>
+                        Our healthy oats are a nutritious breakfast option packed with fiber, vitamins, and minerals, providing a filling and energizing start to your day.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/8zbCtYkF/food-menu3.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Vegetable Salad</h2>
+                    <p>
+                        Our vegetable salad is a vibrant medley of fresh, crisp vegetables tossed in a tangy vinaigrette, delivering a burst of flavors and wholesome goodness in every bite.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Beef with vegetables</h2>
+                    <p>
+                        Savor the succulent combination of tender beef and colorful, crisp vegetables, expertly cooked to perfection, creating a delicious harmony of flavors in every bite.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Healthy Meal</h2>
+                    <p>
+                        Indulge in our wholesome and nourishing healthy meals, carefully crafted with fresh, nutrient-rich ingredients, to support your well-being and fuel your body with vibrant energy.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/Jnxc8xQt/food-menu6.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Fruit Salad</h2>
+                    <p>
+                        Our fruit salad is a vibrant blend of seasonal fruits, bursting with natural sweetness and a refreshing medley of flavors that will tantalize your taste buds. 
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
             </div>
         </div>
-    </section>   --> 
+    </section>
     
-    <!-- Menu Section -->
-    <!--<section>
-        <div class="w3-row w3-padding-64" id="menu">
-            <div class="w3-col l6 w3-padding-large">
-            <h1 class="w3-center">Our Menu</h1><br>
-            <h4>Bread Basket</h4>
-            <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-            
-            <h4>Honey Almond Granola with Fruits</h4>
-            <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-            
-            <h4>Belgian Waffle</h4>
-            <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-            
-            <h4>Scrambled eggs</h4>
-            <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-            
-            <h4>Blueberry Pancakes</h4>
-            <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
-            </div>
-            
-            <div class="w3-col l6 w3-padding-large">
-            <img src="img\menu.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
-            </div>
-        </div>
-    </section> -->
-    
-
-    <!--<section id="client-section">
-        <h1 class="h-primary center">Our Clients</h1>
-        <div id="clients">
-            <div class="client-item">
-                <img src="img\logo1.jpeg" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img\logo2.png" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img\logo3.png" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img\logo4.png" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img\logo5.jpeg" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img\logo6.jpeg" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img\logo7.jpeg" alt="Our Client">
-            </div>
-        </div>
-    </section>-->
-    
+       
     <section id="contact">
-        
-
-        <div class="container">
+        <div class="contact-container">
             
             <form>
             <h1 class="h-primary center">Contact Us</h1>
-            <label for="fname">Name : </label>
-            <input type="text" id="name" name="firstname" placeholder="Your name..">
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
         
-            <label for="lname">Email : </label>
-            <input type="text" id="email" name="lastname" placeholder="Your email..">
+            <label for="email">Email : </label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
         
             <label for="country">Country</label>
             <select id="country" name="country">

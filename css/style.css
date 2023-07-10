@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /*CSS variables*/
 :root{
     --navbar-height: 59px;
@@ -13,7 +16,7 @@
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0px;
 }
 
@@ -98,14 +101,15 @@
 #home p{
     color: rgb(255, 251, 251);
     text-align: center;
-    font-family: 'Belanosima', sans-serif;
+    font-family: 'Bree Serif',serif ;
 }
 
 /*services section*/
+
 #services{
     margin: 34px;
     display:flex;
-   
+    
 }
 
 #services .box{
@@ -114,6 +118,7 @@
     margin: 3px 6px;
     border-radius: 28px;
     background: #f2f2f2;
+    margin-bottom: 20px;
 }
 #services .box img{
     height: 160px;
@@ -127,58 +132,125 @@
     text-align: justify;
 }
 
-/*client section 
-#client-section{
-    
+/*about section*/
+  #about {
+    padding: 50px 0;
+    background: #f5f5f7;
     height: 100%;
-
-}
-#client-section::before{
-    content: "";
-    position: absolute;
-    background: url(../img/bg1.jpg);
     width: 100%;
-    height: 32%;
-    z-index: -1;
-    opacity: 0.24;
-    
-}
-#clients{
+  }
+  .about-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.client-item{
-    padding: 2px;
-}
-#clients img{
-    height: 124px;
-}
-*/
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    align-items:center;
+  }
+  #about h2 {
+    font-size: 2.3rem;
+    font-family: 'Belanosima', sans-serif;
+  }
+  #about p {
+    font-size: 1.2rem;
+    color: #555;
+    font-family: 'Bree Serif',serif ;
+    text-align: justify;
+  }
+  #about .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+    font-family: 'Belanosima', sans-serif;
+  }
+  .about-img {
+    flex: 1 1 38px;
+    padding: 30px;
+    /*transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards; */
+  }
+  
+  .about-text {
+    flex: 1 1 193px;
+    padding: 50px 10px 30px 150px;
+    margin: auto;
+    /*transform: translate(-150%);
+    animation: about-text-animation 1s ease-in-out forwards; */
+  }
+  
+  .about-img img {
+    display: block;
+    height: 558px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+    
+     
+  }
+  /*menu */
+  
+  
+  
+  .food-menu-heading {
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #020202;
+    font-family: 'Belanosima', sans-serif;
+    padding-top: 60px;
+  }
+  .food-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 40px 30px 40px;
+    font-family: 'Belanosima', sans-serif;
+  }
+  .food-menu-container img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .food-menu-item {
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    transition: 0.4s;
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
+  .food-menu-item:hover {
+    box-shadow: 1px 1px 10px grey;
+  }
+  .food-menu-item:focus {
+    border: 1px solid rgb(72, 72, 72);
+  }
+  .food-description {
+    margin: auto 1.5rem;
+  }
+  .font-title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #444;
+  }
+  .food-description p {
+    font-size: 0.9rem;
+    color: #050404;
+    font-weight: 500;
+    font-family: 'Bree Serif',serif ;
+  }
+  .food-description .food-price {
+    color: #117964;
+    font-weight: 700;
+  }
+  
+
 /*contact section */
 
 
-#contact-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 34px;
-}
-#contact-box input,
-#contact-box textarea{
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 9px;
-    font-size: 1.5rem
-}
-
-#contact-box form{
-    width: 48%;
-}
-#contact-box label{
-    font-size: 1.3rem;
-    font-family: 'Belanosima', sans-serif;
-}
 
 footer{
     background-color: black;
@@ -198,6 +270,7 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
   
+  /*contact*?
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: #04AA6D;
@@ -214,7 +287,7 @@ input[type=text], select, textarea {
   }
   
   /* Add a background color and some padding around the form */
-  .container {
+  .contact-container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -225,8 +298,10 @@ input[type=text], select, textarea {
     align-items: center;
     width: 48%;
     font-family: 'Belanosima', sans-serif;
+   
   }
   #contact{
+    
     display: flex;
     justify-content: center;
     align-items: center;
